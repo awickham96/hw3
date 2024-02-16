@@ -1,17 +1,11 @@
 <h1>New Place</h1>
 
 <form action="/places" method="post">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <p>
     <label for="name">Name</label>
     <input type="text" name="name" id="name">
   </p>
-  <p>
-    <label for="activity">Activity</label>
-    <input type="text" name="activity" id="activity">
-  </p>
-  <p>
-    <label for="date">Date</label>
-    <input type="date" name="date" id="date">
-  </p>
   <button>Submit</button>
 </form>
+
