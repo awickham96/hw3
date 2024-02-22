@@ -1,0 +1,13 @@
+<%= form_with :model => @places do |form| %>
+  <p>
+    <%= form.label "title", "Title" %>
+    <%= form.text_field "title" %>
+  </p>
+  <p>
+    <%= form.label "posted_on" %>
+    <%= form.text_field "posted_on" %>
+    <%= form.label "description" %>
+    <%= form.text_field "descripton" %>
+  </p>
+  <%= form.submit %>
+<% end %>
