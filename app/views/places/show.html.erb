@@ -2,8 +2,9 @@
 
 <ul>
   <% for entry in @entries %>
-  <%= entry["name"]%> 
-  <%= entry["created_at"]%>
+  <%= entry["title"]%> 
+  <%= entry["posted_on"]%>
+  <%= entry["description"]%>
   <% end %>
 </ul>
 
