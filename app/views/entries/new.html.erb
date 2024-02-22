@@ -1,0 +1,19 @@
+<h1>New Entry for <%= @place["name"] %></h1>
+
+<form action="/entries" method="post">
+  <p>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name">
+  </p>
+  <p>
+    <label for="created_at">Created At</label>
+    <input type="date" name="created_at" id="created_at">
+    <label for="description">Description</label>
+    <input type="text" name="description" id="description">
+  </p>
+  <p>
+    <label for="company_id">Company</label>
+    <input type="text" name="company_id" id="company_id" value="<%= params["company_id"]%>">
+  </p>
+  <button>Submit</button>
+</form>
