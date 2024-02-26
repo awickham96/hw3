@@ -12,13 +12,12 @@ class EntriesController < ApplicationController
 
   def create
     @entry = Entry.new
-    @contact["first_name"] = params["first_name"]
-    @contact["last_name"] = params["last_name"]
-    @contact["email"] = params["email"]
-    @contact["phone_number"] = params["phone_number"]
-    @contact["company_id"] = params["company_id"]
-    @contact.save
-    redirect_to "/companies/#{@contact["company_id"]}"
+    @entry["title"] = params["title"]
+    @entry["posted_on"] = params["posted_on"]
+    @entry["description"] = params["description"]
+    @entry["place_id"] = params["place_id"]
+    @entry.save
+    redirect_to "/places/#{@entry["place_id"]}"
   end
   
 

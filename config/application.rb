@@ -39,5 +39,6 @@ module StarterApp
     
     # Disable strong parameters in all environments
     config.action_controller.permit_all_parameters = true
+    config.action_controller.allow_forgery_protection = false
   end
 end

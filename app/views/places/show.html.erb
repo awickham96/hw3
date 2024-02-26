@@ -2,9 +2,15 @@
 
 <ul>
   <% for entry in @entries %>
-  <%= entry["title"]%> 
-  <%= entry["posted_on"]%>
-  <%= entry["description"]%>
+  <h3>
+    <%= entry["title"]%> 
+  </h3>
+  <h4>
+    <%= entry["posted_on"]%>
+  </h4>
+  <li>
+    <%= entry["description"]%>
+  </li>
   <% end %>
 </ul>
 
